@@ -1,66 +1,184 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>RACE SCOPE - 万舟券狙いのボートレース予想</title>
-  <!-- Use the golden icon to match the jackpot theme -->
-  <link rel="icon" type="image/png" href="race_scope_icon_gold.png">
-  <link rel="stylesheet" href="style.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>RACE SCOPE｜高配当ボートレース予想</title>
+  <meta name="description" content="RACE SCOPEは、ボートレースの公開データをもとに高配当候補を分析する予想サイトです。予想は的中や利益を保証するものではありません。" />
+  <link rel="icon" type="image/png" href="race_scope_icon.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <!-- Use the new golden header background to evoke a jackpot atmosphere -->
-    <img src="race_scope_header_gold.png" alt="RACE SCOPE background" class="hero-image">
-    <div class="hero-overlay">
-      <h1>RACE SCOPE</h1>
-      <!-- Tagline encourages visitors to chase high payouts and a once‑in‑a‑lifetime win -->
-      <p>一攫千金を狙え！高配当を追い求める分析サイト</p>
-      <a href="https://note.com/boat_scope" class="cta-button">高配当予想を見る</a>
-    </div>
+  <header class="site-header">
+    <a class="brand" href="#">RACE SCOPE</a>
+    <nav class="nav">
+      <a href="#top" class="active">トップ</a>
+      <a href="https://note.com/boat_scope">今日の高配当予想</a>
+      <a href="#results">的中実績</a>
+      <a href="#concept">サービスについて</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+    <a class="login-btn" href="https://note.com/boat_scope">note</a>
   </header>
-  <main>
-    <section class="about">
-      <h2>RACE SCOPEとは</h2>
-      <p>RACE SCOPEは、ボートレースの出走表、選手成績、モーター情報、展示気配などのデータを整理し、レースごとの買い目候補を提供するサイトです。無料予想と有料予想を用意し、結果は的中・不的中を問わず記録します。予想は利益を保証するものではありませんので、ご自身の判断でお楽しみください。</p>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="pill">万舟券・高配当特化</p>
+        <h1>一攫千金を狙え。</h1>
+        <p class="lead">人生逆転級の一撃を、データで追いかける。</p>
+        <p class="sub">
+          膨大なレースデータを分析し、<br>
+          高配当の可能性を秘めたレースを厳選してお届けします。
+        </p>
+        <a class="primary-btn" href="https://note.com/boat_scope">
+          本日の高配当予想を見る
+          <span>›</span>
+        </a>
+        <p class="notice">※予想は的中や利益を保証するものではありません。</p>
+      </div>
+      <div class="hero-visual">
+        <img src="hero_boats.png" alt="ボートレースのイメージ">
+      </div>
     </section>
-    <section class="features">
-      <h2>注目ポイント</h2>
-      <ul>
-        <li>枠番・コース別の成績分析</li>
-        <li>選手やモーターの直近成績</li>
-        <li>展示タイム・周回展示の気配</li>
-        <li>進入、風、波、会場特性の考慮</li>
-      </ul>
+
+    <section id="concept" class="concept block">
+      <div class="concept-text">
+        <p class="label">CONCEPT</p>
+        <h2>RACE SCOPEとは</h2>
+        <p>
+          RACE SCOPEは、ボートレースの公開データをもとに、
+          配当が期待できるレースを独自の視点で分析・提供する
+          万舟券・高配当特化の予想サイトです。
+        </p>
+        <p>
+          本命一点に絞るのではなく、荒れる条件を見極め、
+          3連単フォーメーションで狙うことで、夢のある配当を
+          現実のチャンスへと変えていきます。
+        </p>
+        <a class="outline-btn" href="https://note.com/boat_scope">サービスについて詳しく見る <span>›</span></a>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="icon">◌</div>
+          <h3>データ分析</h3>
+          <p>出走表・成績・モーターなど多角的にデータを分析。</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">▥</div>
+          <h3>高配当特化</h3>
+          <p>人気薄の激走条件を見抜き、高配当レースを厳選。</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">≋</div>
+          <h3>多角的要素</h3>
+          <p>風・波・進入・会場特性など環境要因も徹底評価。</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">◎</div>
+          <h3>3連単フォーメーション</h3>
+          <p>点数を抑えつつ、妙味ある買い目を提案。</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">▣</div>
+          <h3>毎日更新</h3>
+          <p>毎日厳選したレースを公開。成績も継続記録。</p>
+        </article>
+        <article class="feature-card">
+          <div class="icon">◇</div>
+          <h3>責任ある情報提供</h3>
+          <p>データに基づく予想を提供し、健全な舟券購入を推奨。</p>
+        </article>
+      </div>
     </section>
-    <section class="results">
-      <h2>最新の高配当実績</h2>
-      <!-- Explain that we track big payout results without exaggeration -->
-      <p>公開した万舟券狙い予想の成績を随時更新します。高配当的中例が出次第こちらに掲載します。</p>
-      <table>
-        <thead>
-          <tr>
-            <th>日付</th>
-            <th>競艇場／レース</th>
-            <th>買い目点数</th>
-            <th>払戻金</th>
-            <th>備考</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- No results yet: leave the table empty or provide a placeholder row -->
-          <tr>
-            <td colspan="5">実績はまだありません。公開後に更新します。</td>
-          </tr>
-        </tbody>
-      </table>
+
+    <section class="today block">
+      <p class="label center">TODAY'S PICK UP</p>
+      <h2 class="center-title">本日の注目レース</h2>
+      <div class="race-grid">
+        <article class="race-card">
+          <div class="race-top">
+            <h3>公開後更新</h3>
+            <span>注目度 S</span>
+          </div>
+          <p>本日の候補レース</p>
+          <small>noteで公開</small>
+          <div class="numbers"><b>1</b><b>2</b><b class="red">3</b><b>4</b><b class="gold">5</b><b class="green">6</b></div>
+        </article>
+        <article class="race-card">
+          <div class="race-top">
+            <h3>公開後更新</h3>
+            <span>注目度 A</span>
+          </div>
+          <p>高配当候補</p>
+          <small>noteで公開</small>
+          <div class="numbers"><b>1</b><b class="red">3</b><b>2</b><b class="blue">4</b><b class="gold">5</b><b class="green">6</b></div>
+        </article>
+        <article class="race-card">
+          <div class="race-top">
+            <h3>公開後更新</h3>
+            <span>注目度 A</span>
+          </div>
+          <p>一撃候補</p>
+          <small>noteで公開</small>
+          <div class="numbers"><b>1</b><b class="blue">4</b><b>2</b><b class="red">3</b><b class="gold">5</b><b class="green">6</b></div>
+        </article>
+      </div>
+      <a class="outline-btn centered" href="https://note.com/boat_scope">今日の全予想を見る <span>›</span></a>
+    </section>
+
+    <section id="results" class="performance block">
+      <div class="performance-copy">
+        <p class="label">PERFORMANCE</p>
+        <h2>的中実績</h2>
+        <p>高配当を的中に導いた実績の一部を紹介。データと分析が生む結果を、ぜひご覧ください。</p>
+        <a class="outline-btn" href="https://note.com/boat_scope">実績一覧を見る <span>›</span></a>
+      </div>
+      <div class="result-cards">
+        <article class="result-card pending">
+          <small>COMING SOON</small>
+          <h3>実績公開後に更新</h3>
+          <strong>記録中</strong>
+          <p>的中・不的中を含めて掲載</p>
+        </article>
+        <article class="result-card pending">
+          <small>COMING SOON</small>
+          <h3>直近成績</h3>
+          <strong>集計中</strong>
+          <p>回収率・的中率を更新</p>
+        </article>
+        <article class="result-card pending">
+          <small>COMING SOON</small>
+          <h3>最高払戻</h3>
+          <strong>更新予定</strong>
+          <p>確認できた実績のみ記載</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="faq block">
+      <h2>ご利用前に</h2>
+      <p>
+        RACE SCOPEの予想は、的中や利益を保証するものではありません。
+        舟券の購入は自己責任でお願いします。20歳未満の方は舟券を購入できません。
+      </p>
     </section>
   </main>
+
   <footer>
-    <p>予想は的中や利益を保証するものではありません。舟券の購入は自己責任でお願いします。20歳未満の方は舟券を購入できません。</p>
-    <p>&copy; 2026 RACE SCOPE</p>
+    <div class="footer-brand">RACE SCOPE</div>
+    <nav>
+      <a href="#top">トップ</a>
+      <a href="https://note.com/boat_scope">今日の高配当予想</a>
+      <a href="#results">的中実績</a>
+      <a href="#concept">サービスについて</a>
+      <a href="#faq">よくある質問</a>
+    </nav>
+    <p>※予想は的中や利益を保証するものではありません。舟券の購入は自己責任でお願いします。20歳未満の方は舟券を購入できません。</p>
+    <p>© 2026 RACE SCOPE All Rights Reserved.</p>
   </footer>
 </body>
 </html>
